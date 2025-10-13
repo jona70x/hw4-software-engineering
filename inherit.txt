@@ -1,0 +1,6 @@
+Why would you use inheritance in a program
+
+I would use inheritance in a program to share functionality between classes without repeating code. For example, If I have a class Animal with an instance method "eat:", by creating a class Dog that extends Animal, this class will have access to the method eat automatically, without having to redefine it. 
+
+With inheritance, we can also implement polymorphism. For example, if I have a base class Shape with an instance method "area", this method will be available in classes that inherit it, but it can be modified so these subclasses work. A class instance Circle will have a different implementation of the method than, for example, another class Rectangle. 
+
