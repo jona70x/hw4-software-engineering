@@ -1,0 +1,8 @@
+1. Does the change inside increment_int_a change the variable a after the function call?
+
+No, the value does not change. When we pass the variable a to a function, the function creates a copy of that integer and increments it. However, this copied integer only lives in that scope, and if we want to preserve the value and have access to it, we need to return it from the function. 
+
+2. Does the change inside increment_int_b change the variable b after the function call?
+Yes the values in b changed. Dictionaries are passed by reference and the changes made to them in a function persist in the program.
+
+They differ because integers are immutable and we must create a new one and bind it to a variable outside the function's scope. Dictionaries are mutable and the function modifies the object. 

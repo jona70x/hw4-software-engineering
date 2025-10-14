@@ -3,14 +3,17 @@ class Base:
         self.x = x
         self.y = y
         self.size = size
-    def shape(self):
-        return "This is a circle"
+    def shape(self, shape):
+        return f"This is a {shape}"
     
 # TODO: there's code missing in one or more lines below
 
 class Circle(Base):
     def __init__(self, x,y, size):
         super().__init__(x, y, size)
+
+    def shape(self, shape="circle"):
+        return super().shape(shape)
 
     def draw(self):
         return f"""({self.x}, {self.y})\n{self.size}
