@@ -33,5 +33,5 @@ def cacti_number(plot):
                         plot[i][j] = 1
                         #increment cactus count
                         count += 1
-            return count
-        return wrapper()
+        return count
+    return wrapper()
